@@ -1,0 +1,88 @@
+button {
+  margin: 2em;
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  background: #46665582;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 170%;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 5em;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 450px;
+  margin: 2em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.6em;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.7em 1em;
+  border-radius: 30px;
+  background: #46665582;
+  color: white;
+  font-family: inherit;
+  font-size: 100%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #4ca07382;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 25px;
+  position: relative;
+}
+
